@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Diseño</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario</h1>
+        
+        <form action= "reg.php." method="POST">
+        <form id="miFormulario">
+            <label for="cuenta">Número de Cuenta:</label>
+            <input type="text" id="cuenta" name="cuenta" max="999999999" placeholder="Max 8 Digitos">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad" max="999" placeholder="Max 3 Digitos">
+
+            <label for="color">Color Favorito:</label>
+            <input type="text" id="color" name="color" required>
+
+           
+            <button type="button" onclick="registrarCasillas()">Registro</button>
+            <button type="button" class="clear" onclick="limpiarCasillas()">Clear</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
